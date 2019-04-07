@@ -30,7 +30,7 @@ The project contains a python implementation of a multi-class text classifier. I
 
 The application accepts JSON **GET** request.
 
-EndPoint: `http://localhost:9090/classify` 
+EndPoint: `http://localhost:5000/classify` 
 
 Sample Request: `   { "message": "Please cancel the order",
                     "timestamp": "2001-02-03T10:11:12" }`
