@@ -23,19 +23,27 @@ The project contains a python implementation of a multi-class text classifier. I
     
 ## How To Execute
 
-### DOCKER BUILD
+**Disclaimer** The build has been tested on Windows Docker toolbox. Docker for Windows(Mac, Linux etc.) the IP address might need to be altered. 
+
+### DOCKER
+
+Build the docker image from the Dockerfile. Navigate to the root of the project directory. The project structure at root is showed above. 
+
+`docker build -t topservice:latest .`
+
+`docker run -p 5000:5000 topservice`
 
 
 ### QUERY
 
 The application accepts JSON **GET** request.
 
-EndPoint: `http://localhost:5000/classify` 
+EndPoint: `http://192.168.99.100:5000/classify` 
 
 Sample Request: `   { "message": "Please cancel the order",
                     "timestamp": "2001-02-03T10:11:12" }`
                   
 Sample Response: `   {"suggested_message": "Of course. Please share your order number and account number with me and I will cancel."
-                   , "prediction_category": "CANCEL_ORDER", "prediction_confidence": "0.6272415352511369"}
+                   , "prediction_category": "CANCEL_ORDER", "prediction_confidence": "0.730218624738"}
                  `
 
