@@ -24,4 +24,4 @@ class Classifier:
             else:
                 return MessageCategory.OTHERS, 1-confidence
         except Exception as e:
-            raise Exception('Classification Failed')
+            raise Exception('Classification Failed'+str(e))
