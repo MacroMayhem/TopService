@@ -38,4 +38,4 @@ def classify_request():
 
 
 if __name__ == "__main__":
-    app.run(port=9090,debug=True)
+    app.run(debug=True)
