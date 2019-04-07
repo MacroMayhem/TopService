@@ -23,7 +23,7 @@ The project contains a python implementation of a multi-class text classifier. I
     
 ## How To Execute
 
-**Disclaimer** The build has been tested on Windows Docker toolbox. Docker for Windows(Mac, Linux etc.) the IP address might need to be altered. 
+**Disclaimer:** The build has been tested on Windows Docker toolbox. Docker for Windows(Mac, Linux etc.) the IP address might need to be changed to 127.0.0.1 
 
 ### DOCKER
 
